@@ -193,20 +193,24 @@ Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default conf
 
 ### Step 2.5:  SSH into machine and redirect <i>local</i> localhost to machine localhost
 - open a terminal or cmd window on your <b>local</b> machine 
-- <kbd>ssh -N -L localhost:8888:localhost:8889 paperspace@your.public.ip.here</kbd>
+- <kbd>ssh -N -L localhost:8890:localhost:8889 paperspace@your.public.ip.here</kbd>
 
 ```
-C:\Users\Me>ssh -N -L localhost:8888:localhost:8889 paperspace@184.###.###.###
+C:\Users\Me>ssh -N -L localhost:8890:localhost:8889 paperspace@184.###.###.###
 paperspace@184.###.###.###'s password:
 
 ```
 - keep this cmd window open. It appears to hang after enter on password, but all good.
 - this was sourced from https://hsaghir.github.io/data_science/jupyter-notebook-on-a-remote-machine-linux/
 - I have not tried it, but I assume this could be done with a .bat file, at least to some extent
+- After setting up passwordless login according to the optional setup later, I don't need to put
+in my password.
+- -L forward remote host's 8889 port to local host's 8890 port.
 
 ### Step 3:  Get Notebook url
-- copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
-- for me it is http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
+- copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc), and change the port
+number to 8890.
+- for me it is http://localhost:8890/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
 - and it <strike>**WON'T WORK**</strike> :boom:  Hooray, it works! :smiley::   
 
 ---
