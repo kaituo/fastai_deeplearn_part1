@@ -171,6 +171,8 @@ Already up-to-date.
 (fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook --generate-config
 Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default config? [y/N]
 ```
+- Reconfigure jupyter configuration file according to https://gist.github.com/tcvieira/d29d38068a6cd2c455baaaf0d183534b
+- sudo ufw allow 8888:8898/tcp
 
 ### Step 2:  Launch Jupyter Notebook (now with more config!)
 <kbd> jupyter notebook --no-browser --port=8889 --NotebookApp.allow_remote_access=True</kbd>
@@ -352,5 +354,6 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
 
 ### Cool!  no password required, and no need to update notebook url with Paperspace IP address
 - this is my url link, and it works! :boom:  
-http://localhost:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
+http://<your public ip>:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
+- make sure you use public ip
 
