@@ -354,6 +354,6 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
 
 ### Cool!  no password required, and no need to update notebook url with Paperspace IP address
 - this is my url link, and it works! :boom:  
-http://<your public ip>:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
+http://your public ip:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
 - make sure you use public ip
 
